@@ -14,7 +14,7 @@
 - Backend: AWS S3 for state management.
   - Bucket: Specified in configuration (replace `<bucket-name>` with actual bucket name).
   - Key: `terraform.tfstate`.
-  - Region: `us-east-1`.
+  - Region: `us-east-1`. 
 
 ## Configuration Files
 1. `variables.tf`: Defines variables like AWS region and cluster name.
