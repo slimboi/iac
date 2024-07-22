@@ -13,9 +13,10 @@ sudo apt update -y
 
 # Install Docker 
 sudo apt install docker.io -y
+sudo systemctl enable --now docker
 sudo usermod -aG docker $USER
-newgrp docker
-sudo systemctl enable --now docker 
+sudo chmod 666 /var/run/docker.sock
+ 
 
 # Wait for Docker to initialize
 sleep 10
