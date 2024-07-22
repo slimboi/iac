@@ -13,7 +13,8 @@ sudo apt update -y
 
 # Install Docker 
 sudo apt install docker.io -y
-sudo usermod -aG docker ubuntu
+sudo usermod -aG docker $USER
+newgrp docker
 sudo systemctl enable --now docker 
 
 # Wait for Docker to initialize
